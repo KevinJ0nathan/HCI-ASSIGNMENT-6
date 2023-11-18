@@ -6,8 +6,7 @@
 }
 
 
-.question1, .question2, .question3, .question4{
-    
+.question1, .question2, .question3{
     cursor: pointer;
     color: white;
     margin: 4% 10% 3% 10%;
@@ -18,14 +17,17 @@
 }
 
 
-.question1 p, .question2 p, .question3 p, .question4 p{
+.question1 p, .question2 p, .question3 p{
     display: none;
     font-family: "Montserrat";
 }
 
 i{
     float: right;
+    font-size: 1em;
 }
 
 
-
+.question1 h2 , .question2 h2 , .question3 h2{
+    font-size: 1.5em;
+}
