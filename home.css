@@ -1,0 +1,42 @@
+.header-container{
+   text-align: center;
+   margin: 5%;
+
+}
+
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(https://cdn.discordapp.com/attachments/578899261509468160/1175021262221881366/onigiri_pattern.png?ex=6569b6d3&is=655741d3&hm=1e43a1158ca1edbd2e81b081985a6c02ccb20a9a2457adcb2076f234beb6621c&);
+}
+
+body a{
+    text-decoration: none;
+    color: #333
+}
+
+.Project-Container{
+    gap: 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.project{
+    border: 1px solid #ccc;
+    padding: 5%;
+    text-align: center;
+    width: 50%;
+    background-color: #fff;
+}
+
+.project:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+

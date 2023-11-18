@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    background-color: #AA3939;
+}
+
+
+
+.header-container{
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    color: black;
+    padding: 40px;
+    margin-top: 10%;
+}
+
+.header-container h1{
+    font-size: 4em;
+}
+
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: center;
+}
+
+.image-container img{
+    width: 100px;
+    height: 150px;
+    margin: 1vw;
+    border-radius: 1vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.filter button {
+    padding: 10px 20px;
+    margin: 3px;
+    border: 2px solid #333;
+    background-color: #fff;
+    color: #333;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5%;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.filter button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.filter button.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.hero-container figcaption {
+    font-size: 13px;
+    margin-top: 5px;
+    text-align: center;
+    color: #333;}
+
+.image-container img:hover{
+    transform:translateY(-5%);
+}

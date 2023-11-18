@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="IG-styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+            $(document).ready(function(){
+            $("#show").click(function(){
+                $("img").show();
+                $(".filter button").removeClass("active"); 
+                $(this).addClass("active");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#showTank").click(function(){
+                $("img").hide();
+                $(".Tank").show();
+                $(".filter button").removeClass("active"); 
+                $(this).addClass("active");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#showFighter").click(function(){
+                $("img").hide();
+                $(".Fighter").show();
+                $(".filter button").removeClass("active"); 
+                $(this).addClass("active");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#showMarksman").click(function(){
+                $("img").hide();
+                $(".Marksman").show();
+                $(".filter button").removeClass("active"); 
+                $(this).addClass("active");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#showAssassin").click(function(){
+                $("img").hide();
+                $(".Assassin").show();
+                $(".filter button").removeClass("active"); 
+                $(this).addClass("active");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#showSupport").click(function(){
+                $("img").hide();
+                $(".Support").show();
+                $(".filter button").removeClass("active"); 
+                $(this).addClass("active");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#showMage").click(function(){
+                $("img").hide();
+                $(".Mage").show();
+                $(".filter button").removeClass("active"); 
+                $(this).addClass("active");
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ImageGallery.html">Image Gallery With Filter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FAQ.html">FAQ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Interactive Menu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="header-container">
+        <h1>Mobile Legends Heroes Gallery With Filter</h1>
+    </div>
+
+    <div class="filter">
+        <button id="show">All</button>
+        <button id="showTank">Tank</button>
+        <button id="showFighter">Fighter</button>
+        <button id="showMarksman">Marksman</button>
+        <button id="showAssassin">Assassin</button>
+        <button id="showSupport">Support</button>
+        <button id="showMage">Mage</button>
+    </div>
+
+    <div class="image-container">
+        <img alt="Valentina Mage" title="Valentina Mage" src="https://cdn2.vistek.id/mlbb/heroes/Valentina.jpg" class="Mage">
+        <img alt="Fredrinn Tank" title="Fredrinn Tank" src="https://cdn2.vistek.id/mlbb/heroes/Fredrinn.jpg" class="Tank">
+        <img alt="Beatrix Marksman" title="Beatrix Marksman" src="https://cdn2.vistek.id/mlbb/heroes/Beatrix.jpg" class="Marksman">
+        <img alt="Edith Tank" title="Edith Tank" src="https://cdn2.vistek.id/mlbb/heroes/Edith.jpg" class="Tank Marksman">
+        <img alt="Irithel Marksman" title="Irithel Marksman" src="https://cdn2.vistek.id/mlbb/heroes/Irithel.jpg" class="Marksman">
+        <img alt="Terizla Fighter" title="Terizla Fighter" src="https://cdn2.vistek.id/mlbb/heroes/Terizla.jpg" class="Fighter">
+        <img alt="Claude Marksman" title="Claude Marksman" src="https://cdn2.vistek.id/mlbb/heroes/Claude.jpg" class="Marksman">
+        <img alt="Lancelot Assassin" title="Lancelot Assassin" src="https://cdn2.vistek.id/mlbb/heroes/Lancelot.jpg" class="Assassin">
+        <img alt="Paquito Fighter/Assassin" title="Paquito Fighter/Assassin" src="https://cdn2.vistek.id/mlbb/heroes/Paquito.jpg" class="Fighter Assassin">
+        <img alt="Baxia Tank" title="Baxia Tank" src="https://cdn2.vistek.id/mlbb/heroes/Baxia.jpg" class="Tank">
+        <img alt="Pharsa Mage" title="Pharsa Mage" src="https://cdn2.vistek.id/mlbb/heroes/Pharsa.jpg" class="Mage">
+        <img alt="Kadita Mage/Assassin" title="Kadita Mage/Assassin" src="https://cdn2.vistek.id/mlbb/heroes/Kadita.jpg" class="Mage Assassin">
+        <img alt="Martis Fighter" title="Martis Fighter" src="https://cdn2.vistek.id/mlbb/heroes/Martis.jpg" class="Fighter">
+        <img alt="Angela Support" title="Angela Support" src="https://cdn2.vistek.id/mlbb/heroes/Angela.jpg" class="Support">
+        <img alt="Uranus Tank" title="Uranus Tank" src="https://cdn2.vistek.id/mlbb/heroes/Uranus.jpg" class="Tank">
+        <img alt="Bruno Marksman" title="Bruno Marksman" src="https://cdn2.vistek.id/mlbb/heroes/Bruno.jpg" class="Marksman">
+        <img alt="Novaria Mage" title="Novaria Mage" src="https://cdn2.vistek.id/mlbb/heroes/Novaria.jpg" class="Mage">
+        <img alt="Grock Tank" title="Grock Tank" src="https://cdn2.vistek.id/mlbb/heroes/Grock.jpg" class="Tank Fighter">
+        <img alt="Kaja Support" title="Kaja Support" src="https://cdn2.vistek.id/mlbb/heroes/Kaja.jpg" class="Support Fighter">
+        <img alt="Yve Mage" title="Yve Mage" src="https://cdn2.vistek.id/mlbb/heroes/Yve.jpg" class="Mage">
+        <img alt="Faramis Mage" title="Faramis Mage" src="https://cdn2.vistek.id/mlbb/heroes/Faramis.jpg" class="Mage">
+        <img alt="Khufra Tank" title="Khufra Tank" src="https://cdn2.vistek.id/mlbb/heroes/Khufra.jpg" class="Tank">
+        <img alt="Brody Marksman" title="Brody Marksman" src="https://cdn2.vistek.id/mlbb/heroes/Brody.jpg" class="Marksman">
+        <img alt="Chou Fighter" title="Chou Fighter" src="https://cdn2.vistek.id/mlbb/heroes/Chou.jpg" class="Fighter">
+    </div>
+
+</body>
+</html>

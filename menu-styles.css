@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(122, 89, 212) !important;
+}
+
+.container-header{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    color: white;
+}
+
+.food-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 10%;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.food-container h2{
+    color: white;
+}
+
+.Rendang , .Mie-Ayam, .Nasi-Padang{
+    margin-bottom: 2em;
+}
+
+.food-container p{
+    color: white;
+    max-width: 300px; 
+    margin: 0 auto; 
+    text-align: justify;
+    display: none;
+    font-size: 0.8em;
+}
+
+.food-container .Nasi-Padang:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.food-container .Mie-Ayam:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.food-container .Rendang:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 600px) {
+    .container-header{
+        margin-top: 25%;
+    }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="faq-styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>FAQ</title>
+    <script>
+        $(document).ready(function(){
+        $(".question1").click(function(){
+            $("#answer1").slideToggle();
+            $(".question1 i").toggleClass("fa-plus-circle fa-minus-circle");
+        });
+        });
+
+        $(document).ready(function(){
+        $(".question2").click(function(){
+            $("#answer2").slideToggle();
+            $(".question2 i").toggleClass("fa-plus-circle fa-minus-circle");
+        });
+        });
+
+        $(document).ready(function(){
+        $(".question3").click(function(){
+            $("#answer3").slideToggle();
+            $(".question3 i").toggleClass("fa-plus-circle fa-minus-circle");
+        });
+        });
+
+    </script>
+</head>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ImageGallery.html">Image Gallery With Filter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="FAQ.html">FAQ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Interactive Menu</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <div class="header">
+        <h1>Frequently Asked <b>Questions</b></h1>
+    </div>
+
+    <div class="faq-container">
+        <div class="question1">
+            <h2>What Is Onigiri?<i class="fas fa-plus-circle"></i></h2>
+            <p id="answer1">
+                Onigiri is an online learning web portal affiliated with the Kouyou Language Institute, offering a diverse range of recorded courses and interactive quizzes. As part of the Kouyou Language Institute group, Onigiri aims to provide an engaging and comprehensive online learning experience for its users.
+            </p>
+        </div>
+
+        <div class="question2">
+            <h2>When Was Onigiri Found?<i class="fas fa-plus-circle"></i></h2>
+            <p id="answer2">
+                Onigiri, the online learning web portal, was founded on September 12, 2023, by three individuals: Adrian, Jonathan, and Kevin Jonathan. This relatively new platform is driven by a commitment to delivering quality content, and its founders emphasize the importance of learning from experience. As part of their approach, Onigiri, affiliated with the Kouyou Language Institute group, aims to provide an enriching online learning experience for users, drawing on the collective expertise of its founders.
+            </p>
+        </div>
+
+
+        <div class="question3">
+            <h2>Why Use Onigiri?<i class="fas fa-plus-circle"></i></h2>
+            <p id="answer3">
+                Onigiri offers a distinct Japanese learning experience, blending curated courses, practical learning, and a supportive community. Its founders' expertise drives an inclusive platform with adaptable schedules and quality content. It stands as an interactive, innovative, and user-focused space for authentic language mastery.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

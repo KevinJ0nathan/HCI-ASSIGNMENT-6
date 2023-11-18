@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu-styles.css">
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Menu</title>
+
+    <script>
+        $(document).ready(function(){
+        $(".food").hover(function(){
+        $(this).next("p").slideToggle();
+        });
+    });
+    </script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ImageGallery.html">Image Gallery With Filter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FAQ.html">FAQ</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Interactive Menu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-header">
+        <h1>Interactive Indonesian Food Menu</h1>
+    </div>
+
+    <div class="food-container">
+        <div class="Rendang">
+        <div class="food">
+            <img src="https://cdn.discordapp.com/attachments/578899261509468160/1175321093188370653/rendang.png?ex=656ace11&is=65585911&hm=8ddad0570a48f20eae0cd2a0d775fd3d28df9e66b4da294e9a4725da66bb4552&">
+            <h2>Rendang</h2>
+        </div>
+            <p> A revered Indonesian delicacy, slow-cooked beef immersed in a coconut milk sauce infused with a medley of spices like lemongrass, galangal, and turmeric. Its rich, tender texture and complex blend of flavors—spicy, aromatic, and slightly sweet—make it a cherished dish served alongside steamed rice for a fulfilling culinary experience.</p>
+        </div>
+
+        <div class="Mie-Ayam">
+            <div class="food">
+            <img src="https://cdn.discordapp.com/attachments/578899261509468160/1175330147226878002/Resep-Mie-Ayam-Solo.png?ex=656ad67f&is=6558617f&hm=a3bbc6939d65961482c1b8dd1507867cc8b74fd7ba910bf6bede36d77d2ab63a&">
+            <h2>Mie-Ayam</h2>
+            </div>
+           <p>An Indonesian staple, comprises egg noodles topped with seasoned chicken slices, vegetables, and savory broth. This aromatic dish showcases a delightful fusion of flavors—savory, slightly sweet, and tangy, thanks to soy sauce, garlic, shallots, and various spices. Often garnished with crispy shallots and served with chili sauce for added zest.</p>
+        </div>
+
+        <div class="Nasi-Padang">
+            <div class="food">
+            <img src="https://cdn.discordapp.com/attachments/578899261509468160/1175333665320996925/nasipadang.png?ex=656ad9c6&is=655864c6&hm=2446be005b798e3560392ef7e12557a636081214c6b9862c52b79f223fb47af7&">
+            <h2>Nasi Padang</h2>
+            </div>
+            <p> Hailing from Indonesia, presents a platter of aromatic rice paired with an array of flavorful dishes—spiced meats, curries, vegetables, and crispy rendang. This feast embodies rich, complex flavors, combining spicy, sweet, and savory notes from coconut milk, turmeric, and chili, offering a diverse culinary experience.</p>
+        </div>
+    </div>
+</body>
+</html>
